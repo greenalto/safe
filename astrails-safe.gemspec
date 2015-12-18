@@ -93,17 +93,23 @@ Remote storage is supported on Amazon S3, Rackspace Cloud Files, or just plain S
       s.add_runtime_dependency(%q<aws-s3>, [">= 0"])
       s.add_runtime_dependency(%q<cloudfiles>, [">= 0"])
       s.add_runtime_dependency(%q<net-sftp>, [">= 0"])
+      s.add_runtime_dependency(%q<mime-types>, ["= 2.6.2"])
+      s.add_runtime_dependency(%q<net-ssh>, ["= 2.6.5"])
       s.add_development_dependency(%q<rspec>, [">= 0"])
     else
       s.add_dependency(%q<aws-s3>, [">= 0"])
       s.add_dependency(%q<cloudfiles>, [">= 0"])
       s.add_dependency(%q<net-sftp>, [">= 0"])
       s.add_dependency(%q<rspec>, [">= 0"])
+      s.add_dependency(%q<mime-types>, ["= 2.6.2"])
+      s.add_dependency(%q<net-ssh>, ["= 2.6.5"])
     end
   else
     s.add_dependency(%q<aws-s3>, [">= 0"])
     s.add_dependency(%q<cloudfiles>, [">= 0"])
     s.add_dependency(%q<net-sftp>, [">= 0"])
     s.add_dependency(%q<rspec>, [">= 0"])
+    s.add_dependency(%q<mime-types>, ["= 2.6.2"])
+    s.add_dependency(%q<net-ssh>, ["= 2.6.5"])
   end
 end
